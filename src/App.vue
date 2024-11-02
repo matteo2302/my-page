@@ -1,16 +1,24 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    HelloWorld
+  }
 }
 
 </script>
 
 
 <template>
-  <main>
-    <HelloWorld />
-  </main>
+
+  <body>
+    <main>
+      <HelloWorld />
+      <h1>dio ladro</h1>
+    </main>
+  </body>
+
 </template>
 
 

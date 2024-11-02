@@ -1,11 +1,15 @@
 <script>
+export default { name: 'HelloWorld' };
 
 </script>
 
 <template>
-  <div>
 
-  </div>
+  <body>
+    <div>
+    </div>
+  </body>
+
 </template>
 
 <style scoped></style>
