@@ -15,7 +15,6 @@ export default {
   <body>
     <main>
       <HelloWorld />
-      <h1>dio ladro</h1>
     </main>
   </body>
 

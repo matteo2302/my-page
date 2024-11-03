@@ -7,6 +7,7 @@ export default { name: 'HelloWorld' };
 
   <body>
     <div>
+      dio porco
     </div>
   </body>
 
