@@ -1,6 +1,14 @@
 <script>
 /*esporto hello world per visualizzarlo in app vue*/
-export default { name: 'HelloWorld' };
+export default {
+  name: 'HelloWorld',
+  methods: {
+    /*uso @click per la tenda*/
+    openCurtain() {
+      console.log("dio sporco")
+    }
+  }
+};
 
 </script>
 
@@ -8,8 +16,8 @@ export default { name: 'HelloWorld' };
 
   <body>
     <div class="d-flex justify-content-between">
-      <div id="curtain-1"></div>
-      <div id="curtain-2"></div>
+      <div id="curtain-1" @click="openCurtain"></div>
+      <div id="curtain-2" @click="openCurtain"></div>
     </div>
   </body>
 
