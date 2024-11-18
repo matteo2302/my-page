@@ -5,7 +5,10 @@ export default {
   methods: {
     /*uso @click per la tenda*/
     openCurtain() {
-      console.log("dio sporco")
+      console.log("dio sporco");
+      const curtain = event.currentTarget; // Riferimento sempre al <div> che gestisce il click
+        curtain.style.width = "0"; // Cambia la larghezza del div
+
     }
   }
 };
@@ -16,8 +19,11 @@ export default {
 
   <body>
     <div class="d-flex justify-content-between">
-      <div id="curtain-1" @click="openCurtain"></div>
-      <div id="curtain-2" @click="openCurtain"></div>
+      <div id="curtain-1" @click="openCurtain">
+      <img src="../.././public/goth_curtainleft.jpg" alt="curtain"></div>
+      <div id="curtain-2" @click="openCurtain">
+        <img src="../.././public/goth_curtainright.jpg" alt="curtain">
+      </div>
     </div>
   </body>
 
@@ -32,8 +38,8 @@ export default {
   transition: width 2s;
 }
 
-#curtain-2:hover,
-#curtain-1:hover {
-  width: 15%;
+img{
+  width: 100%;
+  height: 790px;
 }
 </style>
