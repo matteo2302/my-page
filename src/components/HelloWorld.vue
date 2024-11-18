@@ -1,45 +1,75 @@
 <script>
-/*esporto hello world per visualizzarlo in app vue*/
 export default {
   name: 'HelloWorld',
+  data() {
+    return {
+      /* Stato dell'ombra */
+      isShadowActive: true,
+    };
+  },
   methods: {
-    /*uso @click per la tenda*/
-    openCurtain() {
-      console.log("dio sporco");
-      const curtain = event.currentTarget; // Riferimento sempre al <div> che gestisce il click
-        curtain.style.width = "0"; // Cambia la larghezza del div
+    /* Funzione per aprire la tenda */
+    openCurtain(event) {
+      const curtain = event.currentTarget;
+      curtain.style.width = "0"; 
 
-    }
-  }
+      /* Controlla se entrambe le tende sono aperte*/
+      const allCurtains = document.querySelectorAll("#curtain-1, #curtain-2");
+      const areAllCurtainsOpen = Array.from(allCurtains).every(curtain => {
+        const computedStyle = window.getComputedStyle(curtain);
+        return computedStyle.width === "0px";});
+
+      if (areAllCurtainsOpen) {
+        this.isShadowActive = false; 
+      }
+    },
+  },
 };
-
 </script>
 
 <template>
-
-  <body>
+  <div>
+    <!-- Ombra -->
+    <div
+      v-if="isShadowActive"
+      id="shadow"
+    ></div>
+    <!-- Tende -->
     <div class="d-flex justify-content-between">
       <div id="curtain-1" @click="openCurtain">
-      <img src="../.././public/goth_curtainleft.jpg" alt="curtain"></div>
+        <img src="../.././public/goth_curtainleft.jpg" alt="curtain" />
+      </div>
       <div id="curtain-2" @click="openCurtain">
-        <img src="../.././public/goth_curtainright.jpg" alt="curtain">
+        <img src="../.././public/goth_curtainright.jpg" alt="curtain" />
       </div>
     </div>
-  </body>
-
+  </div>
 </template>
 
 <style scoped>
 #curtain-2,
 #curtain-1 {
   width: 45%;
-  height: 50px;
+  height: 100vh;
   background-color: green;
+  transition: width 2s;
+  z-index: 1;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 790px;
   transition: width 2s;
 }
 
-img{
+#shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 790px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+  transition: opacity 2s ease;
 }
 </style>
