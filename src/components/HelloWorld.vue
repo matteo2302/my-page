@@ -10,6 +10,9 @@ export default {
     };
   },
   methods: {
+  test(){
+console.log("funziona")
+  },
     /*apertura tende e gestione dell'ombra*/ 
     openCurtain(event, curtainId) {
       const curtain = event.currentTarget;
@@ -43,10 +46,16 @@ export default {
     </div>
   <!-- Ombra -->
   <div :class="{ 'active-shadow': isShadowActive, 'white-background': !isShadowActive }">
-    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)vLorem ipsum, dolor sit amet consectetur adipisicing elit. A, voluptatem!lorem(10)</div>
+    </div>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, consequatur nostrum. Sed sunt dolores porro est, provident voluptatem aliquam. Officia incidunt repudiandae officiis assumenda eius hic laudantium repellat ex minus.</div>
     
+    <div class="background-photo" @click="test">
+      <div class="my-photo">
+        
+      </div>
+    </div>
     
-  </div>
+  
 </template>
 
 
@@ -58,7 +67,7 @@ export default {
   height: 100vh;
   background-color: green;
   transition: width 2s;
-  z-index: 1;
+  z-index: 2;
   overflow: hidden;
   position: fixed;
 }
@@ -81,12 +90,34 @@ img {
 
 .active-shadow {
   background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
   transition: background-color 2s ease;
+  z-index: 1;
 }
 
 .white-background {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
   transition: background-color 2s ease;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  pointer-events: none;
 }
-
+ .background-photo{
+  height: 300px;
+  background-color: green;
+  width: 100%;
+ }
+ .my-photo{
+  width: 150px;
+  height: 100%;
+  background-color: red;
+ }
 </style>
