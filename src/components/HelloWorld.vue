@@ -10,9 +10,6 @@ export default {
     };
   },
   methods: {
-  test(){
-console.log("funziona")
-  },
     /*apertura tende e gestione dell'ombra*/ 
     openCurtain(event, curtainId) {
       const curtain = event.currentTarget;
@@ -49,9 +46,10 @@ console.log("funziona")
     </div>
     <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, consequatur nostrum. Sed sunt dolores porro est, provident voluptatem aliquam. Officia incidunt repudiandae officiis assumenda eius hic laudantium repellat ex minus.</div>
     
-    <div class="background-photo" @click="test">
-      <div class="my-photo">
-        
+    <div class="background-photo d-flex justify-content-around">
+      <div class="my-photo"></div>
+      <div class="myself">
+        <h1>mattep pizzichemi web developer</h1>
       </div>
     </div>
     
@@ -87,27 +85,24 @@ img {
   height: 790px;
   transition: width 2s;
 }
-
-.active-shadow {
-  background-color: rgba(0, 0, 0, 0.7);
+.active-shadow,
+.white-background{
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vw;
-  transition: background-color 2s ease;
   z-index: 1;
+}
+
+.active-shadow {
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: background-color 2s ease; 
 }
 
 .white-background {
   background-color: rgba(0, 0, 0, 0);
   transition: background-color 2s ease;
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vw;
   pointer-events: none;
 }
  .background-photo{
@@ -120,4 +115,13 @@ img {
   height: 100%;
   background-color: red;
  }
+ .myself{
+  background-color: purple;
+  width: 600px;
+  height: 200px;
+  margin-top: 50px;
+  h1{
+    font-size: 65px
+  }
+}
 </style>
