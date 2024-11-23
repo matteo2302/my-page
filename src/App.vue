@@ -1,11 +1,19 @@
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Curtains from './components/Curtains.vue'
+import Myself from './components/Myself.vue'
 export default {
   name: 'App',
-  /*importo il componente chiamato in precednza hello world*/
+ /*importo i vari componenti*/
   components: {
-    HelloWorld
-  }
+    Curtains,Myself
+  },
+  data() {
+    return {
+    };
+  },
+  methods: {
+
+  },
 }
 
 </script>
@@ -15,7 +23,10 @@ export default {
 
   <body>
     <main>
-      <HelloWorld />
+      <!-- Tende -->
+      <Curtains/>
+      <!-- myself-->
+      <Myself/>
     </main>
   </body>
 
