@@ -1,30 +1,17 @@
 <script>
+import Curtains from './Curtains.vue'
 export default {
   name: "HelloWorld",
+  /*importo il componente chiamato in precednza hello world*/
+  components: {
+    Curtains
+  },
   data() {
     return {
-      /*ombra che copre ciò che sta sotto */
-      isShadowActive: true,
-      /*array che controlla se entrambe le tende siano state cliccate */ 
-      openedCurtains: [], 
     };
   },
   methods: {
-    /*apertura tende e gestione dell'ombra*/ 
-    openCurtain(event, curtainId) {
-      const curtain = event.currentTarget;
-      curtain.style.width = "0";
 
-      /* Aggiungo l'ID della tenda all'array se non è già presente*/
-      if (!this.openedCurtains.includes(curtainId)) {
-        this.openedCurtains.push(curtainId);
-      }
-
-      /* Se entrambe le tende sono state aperte, rendo false isShadowActive*/
-      if (this.openedCurtains.length > 1) {
-        this.isShadowActive = false;
-      }
-    },
   },
 };
 
@@ -33,19 +20,8 @@ export default {
 
 <template>
 <!-- Tende -->
-<div class="d-flex justify-content-between">
-      <div id="curtain-1" @click="event => openCurtain(event, 'curtain1')">
-        <img src="../.././public/goth_curtainleft.jpg" alt="curtain" />
-      </div>
-      <div id="curtain-2" @click="event => openCurtain(event, 'curtain2')">
-        <img src="../.././public/goth_curtainright.jpg" alt="curtain" />
-      </div>
-    </div>
-  <!-- Ombra -->
-  <div :class="{ 'active-shadow': isShadowActive, 'white-background': !isShadowActive }">
-    </div>
-    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, consequatur nostrum. Sed sunt dolores porro est, provident voluptatem aliquam. Officia incidunt repudiandae officiis assumenda eius hic laudantium repellat ex minus.</div>
-    
+ <Curtains/>
+    <!-- myself header -->
     <div class="background-photo d-flex justify-content-around">
       <div class="my-photo"></div>
       <div class="myself">
