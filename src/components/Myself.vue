@@ -25,7 +25,12 @@ export default {
         <h1>mattep pizzichemi web developer</h1>
       </div>
     </div>
-    
+    <!--myself description-->
+    <div class="d-flex">
+      <div class="description">description</div>
+      <div class="w-studied">dove ho </div>
+    </div>
+    <div class="d-flex justify-content-center">linguaggi che conosco</div>
   
 </template>
 
@@ -51,5 +56,15 @@ export default {
   h1{
     font-size: 65px
   }
+}
+.description{
+  background-color: yellow;
+  height: 300px;
+  width: 50%;
+}
+.w-studied{
+  background-color: magenta;
+height: 300px;
+width: 50%;
 }
 </style>
