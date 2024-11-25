@@ -1,11 +1,13 @@
 <script>
 import Curtains from './components/Curtains.vue'
 import Myself from './components/Myself.vue'
+import Myself from './components/ProjectCarousel.vue'
+import ProjectCaroussel from './components/ProjectCaroussel.vue';
 export default {
   name: 'App',
  /*importo i vari componenti*/
   components: {
-    Curtains,Myself
+    Curtains,Myself,ProjectsCarousel
   },
   data() {
     return {
@@ -27,6 +29,8 @@ export default {
       <Curtains/>
       <!-- myself-->
       <Myself/>
+      <!-- project carousel-->
+      <ProjectCaroussel/>
     </main>
   </body>
 
