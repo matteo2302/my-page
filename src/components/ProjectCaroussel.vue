@@ -19,11 +19,65 @@ export default {
 <template>
 
   <body>
-    <div>pippo</div>
+    <h1>progetti di tipo x</h1>
+    <div class="projects-container d-flex">
+      <div>
+        <h4>project name</h4>
+      <div class="project-card"></div>
+      
+    </div>
+    <div>
+        <h4>project name</h4>
+      <div class="project-card"></div>
+      
+    </div>
+    <div>
+        <h4>project name</h4>
+      <div class="project-card"></div>
+      
+    </div>
+    <div>
+        <h4>project name</h4>
+      <div class="project-card"></div>
+      
+    </div>
+    <div>
+        <h4>project name</h4>
+      <div class="project-card"></div>
+      
+    </div>
+    <div>
+        <h4>project name</h4>
+      <div class="project-card"></div>
+      
+    </div><div>
+        <h4>project name</h4>
+      <div class="project-card"></div>
+      
+    </div><div>
+        <h4>project name</h4>
+      <div class="project-card"></div>
+      
+    </div>
+    </div>
   </body>
 
 </template>
 
 
 
-<style scoped></style>
+<style scoped>
+.projects-container{
+height: 200px;
+background-color: cadetblue;
+border: 1px solid transparent;
+}
+
+.project-card{
+  width: 90px;
+  height: 130px;
+  background-color: red;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+</style>
