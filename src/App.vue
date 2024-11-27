@@ -1,8 +1,7 @@
 <script>
 import Curtains from './components/Curtains.vue'
 import Myself from './components/Myself.vue'
-import Myself from './components/ProjectCarousel.vue'
-import ProjectCaroussel from './components/ProjectCaroussel.vue';
+import ProjectsCarousel from './components/ProjectCaroussel.vue';
 export default {
   name: 'App',
  /*importo i vari componenti*/
@@ -30,7 +29,7 @@ export default {
       <!-- myself-->
       <Myself/>
       <!-- project carousel-->
-      <ProjectCaroussel/>
+      <ProjectsCarousel/>
     </main>
   </body>
 

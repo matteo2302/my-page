@@ -19,7 +19,7 @@ export default {
 <template>
 
   <body>
-    
+    <div>pippo</div>
   </body>
 
 </template>
