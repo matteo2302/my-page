@@ -22,7 +22,7 @@ export default {
     <div class="background-photo d-flex justify-content-around">
       <div class="my-photo"></div>
       <div class="myself">
-        <h1>mattep pizzichemi web developer</h1>
+        <h1>Matteo Pizzichemi Web Developer</h1>
       </div>
     </div>
     <!--myself description-->

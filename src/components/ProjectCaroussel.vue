@@ -60,6 +60,11 @@ export default {
       
     </div>
     </div>
+    <div>
+      <li v-for="project in projects" :key="project.name">
+        <a :href="project.url" target="_blank">{{ project.name }}</a>
+      </li>
+    </div>
   </body>
 
 </template>
