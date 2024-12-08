@@ -6,6 +6,9 @@ export default {
   },
   data() {
     return {
+      projects: [
+      { name: "html-css-animation-filter", url: "/public/fixed exaple for my page/html-css-animation-filter/index.html" },
+    ],
     };
   },
   methods: {
